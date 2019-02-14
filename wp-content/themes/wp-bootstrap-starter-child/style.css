@@ -1,0 +1,980 @@
+/*
+Theme Name: WP Bootstrap Starter Child
+Theme URI: https://afterimagedesigns.com/wp-bootstrap-starter/
+Template: wp-bootstrap-starter
+Author: Afterimage Designs
+Author URI: https://afterimagedesigns.com/
+Description: The best WordPress starter theme based on the most powerful frameworks in the world: "_s" (by Automattic, the main people behind WordPress development), Twitter Bootstrap (the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web) and Font Awesome (or Fontawesome, a full suite of 675+ pictographic icons for easy scalable vector graphics on websites). This theme, like WordPress, is licensed under the GPL. You can use this theme as base for your next WordPress theme project and you are allowed to remove the link at the footer or do whatever you want. Your feedback on how we can continuously improve this WordPress Starter Theme Bootstrap will be highly appreciated. Page templates includes Right-sidebar (default page template), Left-Sidebar, Full-Width, Blank with container, Blank without container Page. Other features - Currently using Bootstrap v4.0.0 , Widgetized footer area, WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual Composer, Compatible with Elementor Page Builder. This theme will be an active project which we will update from time to time. Check this page regularly for the updates.
+Tags: blog,custom-menu,featured-images,threaded-comments,translation-ready,right-sidebar,custom-background,e-commerce,theme-options,sticky-post,full-width-template
+Version: 3.1.0.1548701296
+Updated: 2019-01-28 18:48:16
+
+*/
+
+a,p,h1,h2,h3,h4,h5,h6{
+	padding:0;
+}
+
+.top-header-small{
+	background: black;
+	min-height: 44px;
+    line-height: 44px;
+    position: relative;
+    z-index: 1020;
+}
+
+.top-header-small .info-header{
+	margin-right: 20px;
+	white-space: nowrap;
+}
+
+.top-header-small .info-header i{
+	padding: 5px 7px;
+    margin-right: 2px;
+	border-radius: 2px;
+	color:white;
+	background: #C43540;
+}
+
+.top-header-small .info-header span{
+	color:white;
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-size:14px;
+}
+
+.custom-ok-nav{
+    background: rgba(0, 0, 0, 0.3);
+	min-height: 66px;
+	position: relative;
+	z-index: 2;
+}
+
+.custom-ok-nav ul li a{
+    font-family: "r-s-regular";
+    font-size: 18px;
+    font-weight: 600;
+    color:white !important; 
+    text-transform: uppercase;
+    padding: 20px 15px !important;
+    transition: all 0.2s;
+}
+
+.custom-ok-nav .navbar-brand{
+	display:none;
+}
+
+.navbar-toggler{
+	    margin-left: auto;
+    margin-top: 15px;
+}
+
+.navbar-toggler i{
+	color: white;
+    font-size: 30px;
+}
+
+.custom-ok-nav ul li a:hover{
+    color:#C43540 !important;
+}
+
+.round-btns .elementor-button-wrapper .elementor-button-link{
+    border-radius: 50px;
+    background: #C43540;
+    text-transform: uppercase;
+}
+
+.round-btns .elementor-button-wrapper .elementor-button-link:hover{
+    background: transparent;
+    border:1px solid #C43540;
+    color:white;
+}
+
+.lines-around .elementor-heading-title:before{
+	text-align: center;
+    content: "";
+    height: 1px;
+    width: 5%;
+    display: inline-block;
+    margin: 10px;
+    background: #ccc;
+}
+
+.lines-around .elementor-heading-title:after{
+	text-align: center;
+    content: "";
+    height: 1px;
+    width: 5%;
+    display: inline-block;
+    margin: 10px;
+    background: #ccc;
+}
+
+.small-lines-around{
+	text-align:center;
+}
+
+.elementor-element-984c8c9 .elementor-element-populated{
+	padding:0;
+}
+
+.small-lines-around:before,.small-lines-around:after{
+	text-align: center;
+    content: "";
+    height: 1px;
+    width: 5%;
+    display: inline-block;
+    margin: 5px 10px;
+    background: #ccc;
+}
+
+.bevan-light{
+	 font-family: "Bevan";
+	font-weight:300;
+}
+
+.white{
+	color:white;
+}
+
+.theme-red{
+	color:#C43540;
+}
+
+.hotbox {
+	background: #C43540;
+	    padding: 20px;
+    border-radius: 2px;
+}
+
+/* Custom Themes for Food Menu */
+
+.elementor-element .tlp-food-menu .category-title{
+	font-family: "Rock Salt";
+	text-align: center;
+    font-size: 32px;
+	min-width:250px;
+	margin:0 auto 20px auto;
+	padding: 15px;
+	padding-bottom:0;
+	color:white;
+}
+.elementor-element .tlp-food-menu .food-item{
+	background:transparent;
+	padding:0;
+}
+
+.elementor-element .tlp-food-menu h3{
+	color:white;
+	text-transform: uppercase;
+	font-family: "Open Sans", Sans-serif;
+    font-size: 16px;
+	margin: 0;
+    padding: 0;
+}
+
+.elementor-element .tlp-food-menu p{
+	color: #bbb;
+	margin-bottom: 15px;
+    line-height: 22px;
+	font-family: "Open Sans", Sans-serif;
+}
+
+.elementor-element .tlp-food-menu span.price{
+	font-family: "Roboto Slab";
+    display: block;
+    float: right;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0 5px 0 15px;
+    color: white;
+}
+
+.elementor-element .tlp-equal-height{
+	height:auto !important;
+	margin:0;
+}
+
+.red-color{
+	color:red;
+}
+
+.testimonial-content{
+	padding: 33px 25px 33px 50px;
+    position: relative;
+	background:white;
+	border-bottom: 5px solid #C43540;
+}
+
+.testimonial-content .fas{
+	display: block;
+    font-size: 40px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 80px;
+    border-radius: 40px;
+	background: #fff;
+    color: #C43540;
+}
+
+.testimonial-content h4{
+	color: #C43540;
+	font-family: "Bevan";
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+	text-transform: uppercase;
+    font-weight: 300;
+}
+
+.testimonial-content p{
+	font-family: "Open Sans", Sans-serif;
+	font-size: 14px;
+}
+
+.footer-section{
+	padding:40px 0;
+	background:#1c1c1c;
+}
+
+.theme-footer-widget h2{
+	color: #C43540;
+	font-size: 16px;
+	margin: 10px 0 20px 0;
+    font-family: "Bevan";
+    text-transform: uppercase;
+    font-weight: 300;
+	padding:0;
+}
+
+.theme-footer-widget p{
+	color:white;
+	margin-bottom:5px;
+	font-family: "Open Sans", Sans-serif;
+	font-size:14px;
+}
+
+.small-images{
+	margin:0;
+	padding:0;
+	margin-left:-15px;
+}
+
+.small-images li{
+	width:25%;
+	float:left;
+	padding-left:15px;
+	list-style-type:none;
+}
+
+.small-images li img{
+	width:60px;
+	height:60px;
+	object-fit: cover;
+}
+
+.elementor-element-e96742d:before{
+	background: url('http://localhost/restaurant/wp-content/uploads/2019/02/bg-dot.png');
+    height: 100%;
+    width: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+	top:0;
+}
+
+.elementor-container{
+	position:relative;
+	z-index:2;
+}
+
+.footer-dotted:before{
+	background: url('http://localhost/restaurant/wp-content/uploads/2019/02/bg-dot.png');
+    height: 100%;
+    width: 100%;
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+	top:0;
+}
+
+
+.iconCircle{
+	border: 1px solid white;
+	width: 40px;
+	color:white;
+    height: 40px;
+    line-height: 40px !important;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.social-section{
+	text-align:center;
+}
+
+.social-section{
+    background: black;
+    padding: 20px 0 20px;
+}
+
+.social-section p{
+	margin-bottom:0;
+}
+
+.social-icons-row a{
+	transition:all 0.3s;
+}
+
+.social-icons-row a:hover i{
+	background:white;
+	color:black;
+}
+
+.copyrights-text{
+	padding-top:5px;
+	color:white;
+	font-family: "Open Sans", Sans-serif;
+}
+
+.custom-isotope{
+	position:relative;
+	min-height:1500px;
+}
+
+.box-one{
+	position:absolute;
+	left:0;
+	top:0;
+	height:390px;
+}
+
+.box-two{
+	position:absolute;
+	left:66.66666%;
+	top:0;
+	width:390px;
+}
+
+.box-three{
+	position:absolute;
+	left:0;
+	top:390px;
+}
+
+.text-box{
+	background:white;
+	min-height:390px;
+	padding:40px;
+	position:relative;
+}
+
+.text-box p{
+	font-family: "Open Sans", Sans-serif;
+    font-size: 12px;
+}
+
+.red-box{
+	background:#C43540 !important;
+}
+.red-box p{
+	color:white
+}
+
+.red-box .mt0{
+	color:white;
+}
+
+.red-box .arrow-right{
+	   border-left: 30px solid #C43540;
+}
+
+.red-box .arrow-left{
+	   border-right: 30px solid #C43540;
+}
+
+.red-box .arrow-up{
+	   border-bottom: 30px solid #C43540;
+}
+
+.left-image{
+    float: left;
+    width: 33.33333%;
+}
+
+.box-one .left-image img{
+	height: 390px;
+    object-fit: cover;
+}
+
+.box-three .left-image img{
+	height: 390px;
+    object-fit: cover;
+}
+
+.image-on-top{
+	height:390px;
+}
+
+.box-two .image-on-top img{
+	height:390px;
+	object-fit:cover;
+}
+
+.box-right{
+	float: left;
+   width: 33.33333%;
+	height:390px;
+	background:white;
+}
+
+.relatives{
+	position:relative
+}
+
+.mt0{
+	margin:0;
+	font-size: 26px;
+	margin-bottom: 20px;
+    font-family: "Bevan";
+    text-transform: uppercase;
+    font-weight: 300;
+	padding:0;
+}
+
+.no-padding{
+	padding:0;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid white;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translate(-50%,-50%);
+}
+
+.arrow-up{
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid white;
+	position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.arrow-right {
+  	width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    right: -45px;
+    z-index: 2;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.elementor-element-c10d410{
+    min-height: 780px;
+}
+
+.vertical-box{
+	background:white;
+	position:relative;
+	height:390px;
+	z-index:2
+}
+
+.isotop-container .elementor-element-populated{
+	padding:0 !important;
+}
+
+.custom-slick-title{
+	line-height:45px;
+	margin:0;
+	font-family: "Bevan";
+    font-size: 32px;
+    font-weight: 300;
+	text-align: left;
+}
+
+.slick-dots li.slick-active{
+	background: #C43540;
+	width: 12px;
+	height: 12px;
+	border-radius:50%;
+	opacity:1;
+}
+
+ul.slick-dots li button:before{
+	content:"" !important;
+}
+
+
+ul.slick-dots li{
+	width: 10px !important;
+	height: 10px !important;
+	background: #C43540;
+	opacity:0.5;
+	margin-right:8px !important;;
+	border-radius:50%;
+}
+
+.about-slick .slick-slide .slick-slide-image{
+	height:400px;
+	object-fit:contain;
+}
+
+
+.slick-slide{
+	outline:none !important;
+}
+
+.custom-slick-content p{
+	font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Open Sans", Sans-serif;
+    text-align: left;
+}
+
+.menu-page .tlp-food-menu .category-title{
+	    color: #C43540;
+	    font-family: "Rock Salt";
+    	text-transform: none;
+	    font-size: 32px;
+		text-align:center;
+}
+
+.menu-page .tlp-food-menu .food-item .title{
+	    height: 25px;
+	
+}
+
+.menu-page .tlp-food-menu .food-item .title:before{
+	content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 11px;
+    width: 100%;
+    left: 0;
+	background:#ccc;
+}
+
+.menu-page .tlp-food-menu .food-item .title h3{
+	color: #000;
+	width:auto;
+	position:relative;
+	z-index:1;
+	background: white;
+    padding-right: 15px;
+
+}
+
+.menu-page .tlp-food-menu .food-item p{
+	margin-bottom:10px;
+	color: #333;
+}
+
+.menu-page .category-title{
+	display:none;
+}
+
+.tlp-col-sm-12{
+	padding:0
+}
+
+.menu-page .tlp-food-menu .food-item .title span{
+	  color: #C43540;
+	  margin-top: -5px;
+	  background: white;
+      position: relative;
+	   padding: 0 5px 0px 0px;
+}
+
+.vp-filter__style-default .vp-filter__item{
+	margin: 2em 0 !important;
+}
+
+.vp-filter__style-default .vp-filter__item>*{
+	border: none !important;
+	background-color:black !important;
+	padding: 15px 20px !important;
+	color:white !important;
+	text-transform: uppercase;
+}
+
+.vp-filter__style-default .vp-filter__item:first-child a{
+	border-top-left-radius: 36px;
+	border-bottom-left-radius: 36px;
+}
+
+.vp-filter__style-default .vp-filter__item:last-child a{
+	border-top-right-radius: 36px;
+	border-bottom-right-radius: 36px;
+}
+
+.vp-filter__style-default .vp-filter__item-active a{
+	background-color:#e6e6e6 !important;
+	color:black !important;
+}
+
+#content.site-content{
+	padding:0;
+}
+
+.contact-form .wpcf7-form-control{
+	height:62px;
+	border:none;
+	border-radius:0;
+	padding: 20px;
+	font-size: 18px;
+	width:100%;
+	font-weight:300;
+}
+
+.contact-form .wpcf7-form-control:focus{
+	outline:none ;
+	    box-shadow: none;
+}
+
+.contact-form .wpcf7-textarea{
+	min-height: 238px;
+	resize:none;
+}
+
+.contact-form .col-md-6{
+	padding-left: 0;
+}
+
+.contact-form .submit-btn{
+	text-align: center;
+	margin: 4em 4em 2em 4em;
+}
+
+.contact-form .wpcf7-submit{
+	background-color: #C43540;
+    border-color: #C43540;
+    color: #fff;
+	line-height: 2;
+    border-radius: 36px;
+	font-size: 18px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.f-18{
+	font-size:18px;
+}
+
+.contact-form .wpcf7-form-control-wrap{
+	 border: 1px solid #666;
+    padding-left: 30px;
+}
+
+.contact-form .wpcf7-form-control-wrap .wpcf7-text+i{
+	position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 50px;
+	color:black;
+}
+
+.contact-form .wpcf7-form-control-wrap .wpcf7-textarea+i{
+	color:black;
+	padding: 10px 20px 0 20px;
+}
+
+.redhot-box{
+	height:310px;
+	width:100%;
+	background:#C43540;
+	padding: 20px;
+    border-radius: 2px;
+}
+
+.auto-height{
+	height:auto;
+}
+
+.sidebar-widget-head h2{
+	margin:0 0 20px 0;
+	font-size:32px
+}
+.sidebar-info-widget p,.sidebar-info-widget p a{
+	margin:0;
+	color:white;
+	font-family: "Open Sans";
+	font-size:14px;
+}
+
+.sidebar-info-widget p i{
+	width:15px;
+}
+
+.opening-hours-time{
+	text-align: center
+}
+
+.opening-hours-time p{
+	color:white;
+	text-align: center;
+	font-size:14px;
+	margin-bottom:0px;
+}
+
+
+/* Custom Reservvcation Styling */
+
+.custom-reservation{
+	text-align: center;
+}
+
+.custom-reservation legend{
+	padding:0 !important;
+	font-family: 'Bevan';
+	font-weight: 300;
+	color:black;
+	text-transform: uppercase;
+	font-size:18px;
+	margin-bottom:15px;
+	text-align: left;
+}
+
+.custom-reservation .rtb-textarea label{
+	display:none;
+}
+
+.custom-reservation .rtb-text label{
+	display: none;
+}
+
+.custom-reservation .rtb-text input{
+	height:62px;
+	width: 100%;
+	max-width: 100%;
+	padding-left:15px;
+}
+
+.custom-reservation .rtb-textarea textarea{
+	resize:none;
+	width:100%;
+	max-width: 100%;
+	padding:15px 0 0 15px;
+}
+
+.custom-reservation .guest-select{
+	height:62px;
+	width: 100%;
+	max-width: 100%;
+	padding-left:15px;
+	color: black;
+	font-family:'Open Sans';
+	font-weight: 300;
+}
+
+.rtb-booking-form .message{
+	position: relative !important;
+    top: unset!important;
+    left: unset!important;
+}
+
+.custom-reservation .mt-15{
+	margin-top:15px;
+}
+
+.custom-reservation .mt-35{
+	margin-top:35px;
+}
+
+.custom-reservation .red-send{
+	background-color: #C43540;
+    border-color: #C43540;
+    color: #fff;
+    line-height: 2;
+    border-radius: 36px;
+    font-size: 18px;
+    padding: 10px 20px;
+	text-transform: uppercase;
+	margin:2em 0;
+	border: none;
+}
+
+
+.custom-reservation *::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: black;
+	font-family:'Open Sans';
+	font-weight: 300;
+  }
+  .custom-reservation *::-moz-placeholder { /* Firefox 19+ */
+	color: black;
+	font-family:'Open Sans';
+	font-weight: 300;
+  }
+  .custom-reservation *:-ms-input-placeholder { /* IE 10+ */
+	color: black;
+	font-family:'Open Sans';
+	font-weight: 300;
+  }
+  .custom-reservation *:-moz-placeholder { /* Firefox 18- */
+	color: black;
+	font-family:'Open Sans';
+	font-weight: 300;
+  }
+
+
+@media only screen and (max-width:1200px){
+	.custom-ok-nav{
+		background: #C43540;
+		min-height: 80px;
+	}
+
+	.custom-ok-nav .navbar-toggler{
+		border:1px solid white;
+		border-radius: 4px;
+		margin-top: 0;
+	}
+
+	.custom-ok-nav .navbar-brand{
+		display: block;
+	}
+
+	.custom-ok-nav .navbar-brand img{
+		width:65px;
+	}
+
+	.custom-ok-nav #main-nav{
+		margin:0 -15px;
+	}
+
+	.custom-ok-nav #menu-header li{
+		border-bottom:1px solid white;
+	}
+
+	.custom-ok-nav #menu-header li:hover{
+		background:white;
+	}
+
+	.custom-ok-nav #menu-header li:hover a{
+		color:#C43540 !important;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:992px){
+	.tlp-team .tlp-food-menu .title{
+		overflow:unset;
+	}
+	.isotop-container{
+		width:100% !important;
+	}
+	
+	.slick-image-slide, .slide-wrap{
+		height:auto;
+	}
+}
+
+@media only screen and (max-width:767px){
+
+	.f-18 {
+		font-size: 16px;
+	}
+	
+	.box-one,.box-two,.box-three{
+		position:relative;
+		left:unset;
+		top:unset;
+		height:auto;
+	}
+
+	.vp-filter__style-default .vp-filter__item>*{
+		padding: 10px !important;
+	}
+	
+	.menu-page .tlp-food-menu .food-item .title{
+		height:auto;
+	}
+	
+	.menu-page .tlp-food-menu .food-item .title:before{
+		top:25px
+	}
+	
+	.slick-image-slide, .slide-wrap{
+		height:auto;
+	}
+	
+	.custom-slick-title{
+		font-size:20px;
+	}
+	
+	.box-one .left-image img,.image-on-top,.box-two .image-on-top img,.box-three .left-image img,.text-box,.box-right{
+		height:auto;
+		min-height:auto;
+	}
+	
+	.box-two{
+		width:100%;
+	}
+
+	.custom-reservation .rtb-text input,.custom-reservation select,.custom-reservation textarea{
+		border:1px solid black;
+	}
+
+	.custom-reservation .date{
+		margin-bottom:15px;
+	}
+	
+	.box-three .block-div{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+		
+	.text-box{
+		padding:10px;
+	}
+	
+	.left-image,.box-right{
+		width:100%;
+	}
+	
+	.paddingl0{
+		width:100%;
+	}
+	
+	.testimonial-content{
+		margin-bottom:30px;
+	}
+	
+	.footer-logo{
+		text-align:center;
+	}
+
+	.mt-20{
+		margin-top:20px;
+	}
+
+	.elementor-widget-container .elementor-heading-title{
+		font-size:24px !important;
+	}
+
+	.contact-form .col-md-6{
+    	padding-right: 0;
+	}
+}

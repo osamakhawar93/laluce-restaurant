@@ -1,0 +1,104 @@
+/*Control nav style*/
+
+.qc-sliderX-bottomCon{position: absolute;bottom: 25px;text-align: center;z-index: 99999;}
+.qc-sliderX-direction{position: absolute;z-index: 99999;top: 50%;transform: translateY(-50%);}
+.slider-hero-prev{
+float: left;
+margin-left: 10px;
+z-index: 11;
+position: relative;
+display: block;
+font-size: 40px;
+color: #fff;
+line-height: 20px;
+box-shadow: none !important;
+cursor:pointer;
+}
+.slider-hero-next{
+float: right;
+margin-right: 10px;
+z-index: 11;
+position: relative;
+display: block;
+font-size: 40px;
+color: #fff;
+line-height: 20px;
+box-shadow: none !important;
+cursor:pointer;
+}
+
+.qc-sliderX-bottom-slide{
+cursor: pointer;
+margin: 0px;
+padding: 0px;
+margin-left: 10px;
+display: inline-block;
+box-shadow: none !important;
+font-size: 13px;
+}
+
+.qc-sliderX-bottom-slide:hover{
+	color:#3f4851;
+}
+
+.qc-sliderx-bottom-current{
+	color:#3f4851;
+	
+}
+
+.et_pb_fullwidth_code{
+	overflow:hidden;
+}
+
+.hero_bottom_save_button{
+	position: fixed;
+    bottom: 36px;
+    right: 9px;
+}
+
+/*Control nav style*/
+
+/*Responsive Stylev */
+@media only screen and (min-width: 768px) and (max-width: 980px){
+.qcld_hero_content_area h2{font-size:35px !important}
+.qcld_hero_content_area p{font-size: 20px !important;}	
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+.qcld_hero_content_area h2{font-size:26px !important;}
+.qcld_hero_content_area p{font-size: 17px !important;line-height:22px;}	
+}
+@media only screen and (max-width: 1024px) and (min-width: 320px){
+	.sh_bg_video_fluid{
+		position:unset !important;
+	}
+	.fluid-width-video-wrapper{
+		position:unset !important;
+	}
+}
+.sh_bg_video iframe {
+	width: 100%;
+    height: 100%;
+}
+.sh_bg_video {
+    position: absolute;
+	top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+	 z-index:0;
+}
+.sh_video_overlay{
+	position: absolute;
+	top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+	z-index:0;
+}
+.hero_gslider_control {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.sh_bg_video_fluid iframe{position:absolute;left:0;top:0;}
